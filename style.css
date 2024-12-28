@@ -1,0 +1,916 @@
+/****** ANASAYFA ******/
+body {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh; 
+    margin: 0;
+    background-color: #ebdec0;
+}
+header {
+    background-color: #a18e63;
+    padding: 10px 0;
+}
+.sirket_logosu {
+    display: flex; 
+    align-items: center; 
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: -80px;
+}
+.sirket_logosu img {
+    height: 170px;
+    width: 100%; 
+    margin-top: -50px;
+    margin-left: 200px;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+}
+.menu li {
+    position: relative;
+    margin-right: 20px;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+.menu li a:hover {
+    background-color: #333;
+}
+.dropdown {
+    display: none; /* Gizli başlat */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 1000;
+}
+.dropdown li {
+    margin: 0;
+}
+.dropdown li a {
+    padding: 10px 15px;
+}
+.menu li:hover .dropdown {
+    display: block; 
+}
+.content {
+    flex: 1; 
+    background-color: #f4f4f4;
+}
+.enAltDivi {
+    background-color: #a18e63;
+    color: white;
+    padding: 20px;
+    margin-top: auto; 
+    text-align: center;
+    max-height: 200px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.col-link {
+    flex: 1;
+    margin: 0 10px;
+}
+.col-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+.col-link ul {
+    list-style: none;
+    padding: 0;
+}
+.col-link ul li {
+    margin: 10px 0;
+}
+.col-link ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+.col-link ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.enAltDiviReklam p {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 150px;
+}
+/****** DÖVİZ, GÜNCEL DÖVİZ, ALTIN, GÜNCEL ALTIN ******/
+.doviz1_kapsayici iframe {
+    border:"0";
+    height:"200"; 
+    width:305px; 
+    height:134px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.parabirimleri_kapsayici iframe{
+    border:"0";
+    width:100%;
+    height:65px;
+}
+.doviz2_kapsayici iframe {
+    border:"0";
+    width:"400";
+    height:"485";
+    width: 400px;
+    height:485px; 
+    margin: 40px 0 20px auto; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -120px;
+    margin-right: 10px;
+}
+.altin_kapsayici iframe {
+    margin-top: -1050px; 
+    width: 305px;
+    height: 331px;
+    border:"0";
+    margin-left: 200px;
+}
+/****** KURUMSAL ******/
+.divkurumsal {
+    background-color: #f0f0f0;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    border: 1px solid #ddd; 
+    max-width: 1000px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-top:50px;
+}
+.column {
+    flex: 1; 
+    margin: 0 10px; 
+    min-width: 300px; 
+}
+.divkurumsal p {
+    font-size: 16px;
+    line-height: 1.6; 
+    color: #333; 
+    text-align: justify; 
+    margin: 0 auto; 
+}
+.divkurumsal strong {
+    font-size: 24px;
+    color: #a18e63; 
+    display: block; 
+    margin-bottom: 10px; 
+    margin-left: 90px;
+}
+.baslik-cizgisi {
+    border: none; 
+    height: 3px; 
+    background-color: #a18e63; 
+    margin: 10px 0 ; 
+}
+/****** GÜNCEL DÖVİZ VE GÜNCEL ALTIN KISMI ******/
+.doviz2_kapsayici2 iframe {
+    margin: 0 auto; 
+    text-align: center; 
+    width: "1000"; 
+    width: 1000px; 
+    height:"665";
+    height:2645px;
+    margin-left: 450px;
+   margin-bottom: 50px;
+   margin-top: 25px;
+}
+.pkismi p{
+    margin-left: -80px;
+}
+.doviz2_kapsayicii2 iframe {
+    margin: 0 auto; 
+    text-align: center; 
+    width: 1000px; 
+    height:617px;
+    margin-left: 450px;
+   margin-bottom: 50px;
+   margin-top: 25px;
+}
+.bitcoin_kapsayici iframe {
+    margin: 0 auto;
+    text-align: center; 
+    width: 1000px; 
+    height:520px;
+    margin-left: 450px;
+   margin-bottom: 50px;
+   margin-top: 25px;
+}
+.enAltDivii {
+    background-color: #a18e63;
+    color: white;
+    padding: 20px;
+    margin-top: 750px; 
+    text-align: center;
+    max-height: 200px;
+    position: static;
+}
+.altin3_kapsayicii3 iframe {
+    margin: 0 auto; 
+    text-align: center; 
+    width: 430px; 
+    height:223px;
+    margin-left: 1450px;
+   margin-bottom: 50px;
+   margin-top: 125px;
+}
+.altin4_kapsayicii4 iframe {
+    margin: 0 auto; 
+    text-align: center; 
+    width: 430px; 
+    height:223px;
+    margin-right: 1050px;
+    transform: translateY(-124%);
+}
+.altin5_kapsayicii5 iframe {
+    margin: 0 auto; 
+    text-align: center; 
+    width:440px;
+    height:185px;
+    margin-left: 700px;
+   transform: translateY(-325%);
+   margin-bottom:-300px;
+}
+.guncel-doviz-baslik {
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+    margin-right: 65px;
+}
+.guncel-doviz-baslik h2 {
+    font-size: 24px; 
+    color: #333; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    padding: 10px; 
+    background-color: #f8f9fa; 
+    border-radius: 15px; 
+    display: inline-block; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+/****** ARKA PLAN, ÜST MENÜ VE ALT MENÜ SAYFA DÜZENLEMELERİ ******/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebdec0;
+    color: #333;
+}
+h1, h2 {
+    color:#333;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+header {
+    background-color: #a18e63;
+    color: white;
+    padding: 10px 0;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+.menu a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+.dropdown li {
+    margin: 0;
+}
+.dropdown a {
+    padding: 10px;
+    white-space: nowrap;
+}
+.menu li:hover .dropdown {
+    display: block;
+}
+/****** İLETİŞİM ******/
+.ana_kapsayici {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.iletisim-bilgileri {
+    list-style: none;
+    padding: 0;
+}
+.iletisim-bilgileri li {
+    margin-bottom: 10px;
+}
+#iletisim-formu {
+    display: flex;
+    flex-direction: column;
+}
+#iletisim-formu label {
+    margin-top: 10px;
+}
+#iletisim-formu input, #iletisim-formu textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#iletisim-formu button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#iletisim-formu button:hover {
+    background-color: #a18e63;
+}
+.harita-ana_kapsayici {
+    margin-top: 20px;
+}
+.sosyal_medya {
+    margin-top: 20px;
+}
+.sosyal_medya_linkleri {
+    display: flex;
+    gap: 10px;
+}
+.sosyal_ikon {
+    font-size: 24px;
+    color: #0056b3;
+}
+.sosyal_ikon:hover {
+    color: #004080;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.col-link {
+    flex: 1;
+    margin: 0 10px;
+}
+.col-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.col-link ul {
+    list-style: none;
+    padding: 0;
+}
+.col-link ul li {
+    margin-bottom: 5px;
+}
+.col-link ul li a {
+    color: white;
+}
+.enAltDiviReklam {
+    text-align: center;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+ .menu {
+        flex-direction: column;
+        align-items: center;
+  }
+
+ .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+.col-link {
+        margin-bottom: 20px;
+    }
+}
+.letisim-bilgileri {
+list-style-type: none;
+padding-left: 0;
+margin: 0 auto;
+max-width: 600px;
+text-align: left;
+}
+.iletisim-bilgileri li {
+margin: 10px 0;
+font-size: 18px;
+color: #444;
+}
+.iletisim-bilgileri a {
+color: black;
+text-decoration: none;
+font-weight: bold;
+}
+.iletisim-bilgileri a:hover {
+color: rgb(52, 20, 235);
+}
+form {
+margin-top: 30px;
+text-align: left;
+}
+form label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+color: #333;
+}
+form input, form textarea {
+width: 100%;
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+}
+form button {
+background-color: #00bcd4;
+color: #fff;
+border: none;
+padding: 15px 30px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+transition: background 0.3s ease;
+}
+form button:hover {
+background-color: #ebdec0;
+}
+.harita-ana_kapsayici {
+margin-top: 40px;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sosyal_medya_linkleri {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+.sosyal_ikon {
+    font-size: 24px; 
+    color: #333; 
+    transition: color 0.3s ease; 
+}
+.sosyal_ikon:hover {
+    color: #0077b5; 
+}
+.sosyal_ikon.fa-instagram:hover {
+    color: #e4405f; 
+}
+.sosyal_ikon.fa-facebook:hover {
+    color: #1877f2; 
+}
+.duyuru {
+display: none;
+position: fixed;
+top: 10px;
+left: 50%;
+transform: translateX(-50%);
+background-color: #4CAF50;
+color: white;
+padding: 15px;
+font-size: 16px;
+border-radius: 5px;
+z-index: 1000;
+width: 300px;
+text-align: center;
+}
+.duyuru.show {
+display: block;
+}
+/****** ÜYELİK, ÜYE GİRİŞ, YENİ ÜYELİK ******/
+.ana_kapsayicii {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px; 
+    background-color: #f8f9fa;
+    border-radius: 25px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 180px;
+    margin-top: 90px;
+}
+#uye-giris-formu {
+    width: 500px; 
+    margin: 0 auto;
+}
+.uye-giris-baslik {
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    color: #333;
+}
+#uye-giris-formu label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px; 
+    color: #333;
+}
+#uye-giris-formu input[type="email"],
+#uye-giris-formu input[type="password"],
+#uye-giris-formu input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 25px; 
+    font-size: 16px; 
+}
+#uye-giris-formu button {
+    width: 100%;
+    padding: 10px; 
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+#uye-giris-formu button:hover {
+    background-color: #0056b3;
+}
+.sifremi-unuttum {
+    text-align: right;
+    margin-bottom: 16px; 
+}
+.sifremi-unuttum a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px; 
+}
+.sifremi-unuttum a:hover {
+    text-decoration: underline;
+}
+.kayit-linki {
+    text-align: center;
+    margin-top: 16px; 
+    font-size: 14px; 
+}
+.kayit-linki a {
+    color: #007bff;
+    text-decoration: none;
+}
+.kayit-linki a:hover {
+    text-decoration: underline;
+}
+.uyelik-kutusu {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-bottom: 180px;
+    margin-top: 90px;
+}
+.uyelik-kutusu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.uyelik-kutusu input[type="text"],
+.uyelik-kutusu input[type="email"],
+.uyelik-kutusu input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+.uyelik-kutusu input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.uyelik-kutusu input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.radio-group {
+    margin: 10px 0;
+    text-align: center; 
+}
+.radio-group label {
+    margin-right: 10px;
+    display: inline-block; 
+}
+.basslik {
+    background-color: #eef4ff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+.basslik h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.basslikk {
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: left;
+}
+.basslikk h2 {
+    background-color: #a18e63;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.basslikk ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+.commodity-widget {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #eef4ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.commodity-widget h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+.basslik {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: justify; 
+}
+.basslikktusu{
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.basslikkutusu2 {
+    font-size: 24px; 
+    color: #333; 
+}
+/****** FİNANS YAZILARI ******/
+ .finansyazilari {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: justify; 
+}
+.finansyazilari h2 {
+    color: #a18e63; 
+    margin-bottom: 15px; 
+}
+.finansyazilari h3 {
+    color: #333; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+.finansyazilari h3 a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.finansyazilari h3 a:hover {
+    color: #a18e63;
+}
+.finansyazilari p {
+    margin-bottom: 20px; 
+    line-height: 1.6;
+}
+/****** KRİPTO PARALAR VE GELECEĞİ ******/
+ .kriptoparalar {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: justify; 
+}
+.kriptoparalar h2 {
+    color: #007BFF; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.kriptoparalar h3 {
+    color: #333; 
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    margin-right: 55px;
+}
+.kriptoparalar p {
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+}
+.kriptoparalar ul {
+    list-style-type: disc; 
+    padding-left: 40px; 
+    margin-bottom: 20px;
+}
+.kriptoparalar ul li {
+    margin-bottom: 10px; 
+}
+/****** DÖVİZ PİYASASINDA SON GELİŞMELER ******/
+ .dovizpiyasasi {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: justify; 
+}
+.dovizpiyasasi h2 {
+    color: #007BFF; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+.dovizpiyasasi h3 {
+    color: #333;
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+.dovizpiyasasi p {
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+}
+.dovizpiyasasi ul {
+    list-style-type: disc; 
+    padding-left: 40px; 
+    margin-bottom: 20px; 
+}
+.dovizpiyasasi ul li {
+    margin-bottom: 10px; 
+}
+/****** ALTIN YATIRIMI:GÜVENLİ LİMAN MI? ******/
+.altinyatirimi {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: justify; 
+}
+.altinyatirimi h2 {
+    color: #007BFF; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+.altinyatirimi h3 {
+    color: #333; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+.altinyatirimi p {
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+}
+.altinyatirimi ul {
+    list-style-type: disc; 
+    padding-left: 40px; 
+    margin-bottom: 20px; 
+}
+.altinyatirimi ul li {
+    margin-bottom: 10px; 
+}
+  /****** BORSA VE HİSSE SENETLERİ ******/
+ .borsahissesenetleri {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: justify; 
+}
+.borsahissesenetleri h2 {
+    color: #007BFF; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.borsahissesenetleri h3 {
+    color: #333; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+.borsahissesenetleri p {
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+}
+.borsahissesenetleri ul {
+    list-style-type: disc; 
+    padding-left: 40px; 
+    margin-bottom: 20px; 
+}
+.borshissesenetleri ul li {
+    margin-bottom: 10px; 
+}
+/****** FİNANSAL PLANLAMA VE BÜTÇE YÖNETİMİ ******/
+ .finansalplanlama {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: justify; 
+}
+.finansalplanlama h2 {
+    color: #007BFF; 
+    text-align: center;
+    margin-bottom: 20px; 
+}
+.finansalplanlama h3 {
+    color: #333; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+.finansalplanlama p {
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+}
+.finansalplanlama ul {
+    list-style-type: disc; 
+    padding-left: 40px; 
+    margin-bottom: 20px; 
+}
+.finansalplanlama ul li {
+    margin-bottom: 10px; 
+}
